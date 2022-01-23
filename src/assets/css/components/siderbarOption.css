@@ -1,0 +1,40 @@
+.sidebar-option-container{
+    border-top:1px solid rgba(139, 139, 139, 0.226);
+    border-bottom:1px solid rgba(139, 139, 139, 0.226);
+    cursor:pointer
+    
+}
+
+.sidebar-option-principal:hover{
+    background-color:#2f33389c;
+}
+
+.sidebar-arrow{
+    transform: rotate(180deg);
+}
+
+.sidebar-opc{
+    white-space: nowrap;
+}
+
+.sidebar-opc:hover{
+    color:rgb(15, 151, 241) !important;
+    background-color:#2f33389c;
+}
+
+
+
+.siderbar-option{
+    overflow: hidden;
+    max-height: 1100px !important;
+    transition: max-height 1s;
+  
+    transition: scaleY 1s;
+}
+
+
+
+
+  
+
+   
