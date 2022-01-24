@@ -8,11 +8,11 @@ export const Navbar = ({ estadoMenu, setEstadoMenu }) => {
 
   return (
     <div>
-      <nav className="navbar  navbar-expand-lg navbar-light bg-white border shadow shadow-sm">
+      <nav className="navbar  navbar-fixed navbar-expand-lg navbar-light bg-white border shadow shadow-sm ">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
-            <img  onClick={handleMenu} className=" p-1 navbar-icon" src={menu} alt="" />
-          </a>
+          <div onClick={handleMenu}  className="navbar-brand ">
+            <img   className=" p-1 navbar-icon" src={menu} alt="" />
+          </div>
          
           <div
             className="collapse navbar-collapse"

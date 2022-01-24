@@ -6,7 +6,7 @@ import SidebarOpcion from "./SidebarOpcion";
 
 const opciones = {
   presentacion: [
-    { nombre: "Ver presentacion", ruta: "/verPresentacion", accion: "ver" },
+    { nombre: "Ver presentacion", ruta: "/presentacion", accion: "ver" },
    
   ],
   proyectos: [
@@ -56,7 +56,7 @@ export const Sidebar = ({ estadoMenu }) => {
         estadoMenu ? "sidebar_open" : "sidebar_close"
       }`}
     >
-      <div className="mt-4 px-2">
+      <div className="mt-4 px-2 overflow-auto sidebar">
         <div className="mx-2 mb-4 d-flex align-items-center justify-content-start">
           <img
             className="col-2 sidebar-user-image rounded rounded-circle border border-1 border-dark "
@@ -87,7 +87,7 @@ export const Sidebar = ({ estadoMenu }) => {
           className="btn btn-primary col-10 mt-4 m-1 mb-3"
           onClick={handleLogout}
         >
-          Salir
+          Cerrar Session
         </button>
       </div>
     </nav>

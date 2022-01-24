@@ -4,10 +4,13 @@
 
 .sidebar{
   white-space: nowrap;
+  position: sticky;
+  top:-00.1px
 }
 
 
-.sidebar
+
+
 
 .sidebar_open{
     height:  0;

@@ -7,6 +7,7 @@
 
 .sidebar-option-principal:hover{
     background-color:#2f33389c;
+    color:rgb(15, 151, 241) !important;
 }
 
 .sidebar-arrow{

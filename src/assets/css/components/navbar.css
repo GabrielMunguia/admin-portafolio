@@ -1,3 +1,13 @@
 .navbar-icon{
-  width:2em;
+  width:1.2em;
+  cursor:pointer
+
+}
+
+
+
+.navbar-fixed{
+  position: fixed;
+    width: 100%;
+    z-index: 2;
 }
