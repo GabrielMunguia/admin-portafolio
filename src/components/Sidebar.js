@@ -27,7 +27,7 @@ const opciones = {
 
   tecnologias: [
     { nombre: "Ver tecnologias", ruta: "/verTecnologias", accion: "ver" },
-    { nombre: "Agregar tecnologias", ruta: "/agregarTecnologias", accion: "agregar" },
+    { nombre: "Agregar tecnologias", ruta: "/agregarTecnologia", accion: "agregar" },
    
   ],
 
@@ -52,12 +52,12 @@ export const Sidebar = ({ estadoMenu }) => {
 
   return (
     <nav
-      className={` sidebar min-vh-100 bg-dark col-2 d-flex flex-column justify-content-between px-3 text-white ${
+      className={` sidebar min-vh-100 bg-dark col-2 d-flex flex-column justify-content-between  text-white ${
         estadoMenu ? "sidebar_open" : "sidebar_close"
       }`}
     >
       <div className="mt-4 px-2 overflow-auto sidebar">
-        <div className="mx-2 mb-4 d-flex align-items-center justify-content-start">
+        <div className=" mb-5 d-flex align-items-center justify-content-start sidebar_header bg-dark col-12">
           <img
             className="col-2 sidebar-user-image rounded rounded-circle border border-1 border-dark "
             src={usuario.img}
@@ -67,6 +67,7 @@ export const Sidebar = ({ estadoMenu }) => {
             <p className="   d-flex m-0 ms-3 fs-6">{usuario.nombre}</p>
           </div>
         </div>
+        <SidebarOpcion titulo="Inicio" ruta="/"  />
 
         <SidebarOpcion titulo="Presentacion" opciones={opciones.presentacion} />
 

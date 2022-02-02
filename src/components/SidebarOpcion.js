@@ -1,12 +1,13 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../assets/css/components/siderbarOption.css";
 import arrow from "../assets/img/arrow.png";
 
 //Opciones =[{nombre,ruta,accion}]
 
-const SidebarOpcion = ({ titulo, opciones = [] }) => {
+const SidebarOpcion = ({ titulo, opciones = [] ,ruta}) => {
   const [menuActivo, setmenuActivo] = useState(false);
+  const navigate = useNavigate();
 
   const getIcono = (accion) => {
     switch (accion.toUpperCase()) {
@@ -27,8 +28,13 @@ const SidebarOpcion = ({ titulo, opciones = [] }) => {
     }
   };
 
+  
+
   const handleClick = () => {
     setmenuActivo(!menuActivo);
+    if(ruta&&opciones.length===0){
+      navigate(ruta)
+    }
   };
 
   return (
@@ -38,10 +44,10 @@ const SidebarOpcion = ({ titulo, opciones = [] }) => {
         className=" sidebar-option-principal p-3 d-flex justify-content-between align-items-center mb-2"
       >
         <p className="p-0 m-0"> {titulo?.toUpperCase()}</p>
-        <img
+      {opciones.length>0&&  <img
           className={`col-1  ${menuActivo ? "sidebar-arrow" : ""}  `}
           src={arrow}
-        />
+        />}
       </div>
       <ul className="list-group "
       >

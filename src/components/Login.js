@@ -6,7 +6,7 @@ import wave from "../assets/img/wave.svg";
 import { useForm } from "../hooks/useForm";
 import { types } from '../types/types';
 import { AuthContext } from '../auth/authContext';
-import { Navigate } from 'react-router-dom';
+
 
 const initialState = {
   correo: "",

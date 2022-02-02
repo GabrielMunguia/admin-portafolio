@@ -1,3 +1,7 @@
+body{
+  overflow-x: clip;
+}
+
 .sidebar::-webkit-scrollbar {
   display: none;
 }
@@ -5,79 +9,31 @@
 .sidebar{
   white-space: nowrap;
   position: sticky;
-  top:-00.1px
+  top:-00.1px;
+  width: 16em;
+  transition: width .5s ease-in-out;
+  overflow: hidden;
+  padding:0;
+  height: 100vh;
+  margin:0;
+  overflow-y: scroll;
+
+}
+
+.sidebar_header{
+  position: sticky;
+  top:0.1px;
+}
+
+.sidebar_close{
+  width: 0;
+  transition: width .5s ease-in-out;
 }
 
 
 
 
 
-.sidebar_open{
-    height:  0;
-      padding: 0 !important;
-  
-      animation-name: sidebar_open;
-      animation-duration: 0.6s;
-      animation-fill-mode: forwards;
-      overflow-x: hidden;
-  }
-  
-  .sidebar_close{
-      width:  0 ;
-        padding: 0 !important;
-        overflow-x: hidden;
-        animation-name: sidebar_close;
-        animation-duration: 0.6s;
-        animation-fill-mode: forwards;
-    }
-.sidebar-user-image{
-  width: 3em;;
-  height: 3em;
-}
- 
 
 
-@keyframes sidebar_open_sm {
-  0% { width:  70.66666667%; }
-
-  100% { width: 0%; }
-}
-
-@keyframes  sidebar_close_sm {
-  0% { width: 0%; }
-  100% { width:  70.66666667%; }
-}
-   
-  @keyframes sidebar_close {
-      0% { width:  14.66666667%; }
-  
-      100% { width: 0%; }
-    }
-  
-    @keyframes sidebar_open {
-      0% { width: 0%; }
-      100% { width:  14.66666667%; }
-    }
-  
-  
-    @media screen and (max-width: 1024px) {
-      .sidebar_open{
-        height:  0;
-          padding: 0 !important;
-      
-          animation-name: sidebar_open_sm;
-          animation-duration: 0.6s;
-          animation-fill-mode: forwards;
-          overflow-x: hidden;
-      }
-      
-      .sidebar_close{
-          width:  0 ;
-            padding: 0 !important;
-            overflow-x: hidden;
-            animation-name: sidebar_close_sm;
-            animation-duration: 0.6s;
-            animation-fill-mode: forwards;
-        }
-    }
 

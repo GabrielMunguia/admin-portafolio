@@ -1,0 +1,32 @@
+.navbar_perfil_img{
+    width: 3em;
+    height: 3em;
+    padding: 0.4rem;
+    border-radius: 100%;
+}
+
+.navbar_perfil_submenu{
+
+background-color: white;
+
+padding: 0;
+border:1px solid rgba(0, 0, 0, 0.185);
+border-radius: 4px;
+width: 11em;
+position: absolute;
+top:3em;
+
+
+}
+
+.navbar_perfil_opc>div{
+    padding: 0.5em;
+
+   cursor: pointer;
+
+}
+
+.navbar_perfil_opc>div:hover{
+    background-color: rgba(114, 114, 114, 0.178);
+   
+}

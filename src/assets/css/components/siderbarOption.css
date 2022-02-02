@@ -21,7 +21,11 @@
 .sidebar-opc:hover{
     color:rgb(15, 151, 241) !important;
     background-color:#2f33389c;
+    transition: transform 1s;
+    transform:scaleY(1);
 }
+
+
 
 
 
